@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Type = Package
+Target = glibc
+
+[Action]
+Description = Customize Archiso after glibc install
+When = PostTransaction
+Exec = /usr/bin/customize-archiso.sh
